@@ -23,7 +23,7 @@ cursor.execute("SELECT * FROM carros WHERE codigo = "+ cod)
 #############  CONVERTE CONSULTA EM UMA LISTA #######################
 dados = cursor.fetchall()
 if len(dados) == 0:
-    print("Item não encontrato!")
+    print("Item não encontrado!")
 else:
     print("codigo:", dados[0][0])
     print("fabricante:", dados[0][1])
